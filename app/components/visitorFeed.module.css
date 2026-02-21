@@ -1,0 +1,78 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -.5rem;
+    flex-direction: column;
+}
+
+.title{
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.subtitle{
+    font-size: 12px;
+    color: #54525D;
+}
+
+.container hr{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.visitContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.today{
+    font-weight: 600;
+    font-weight: 12px;
+}
+
+.visits{
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.buttonGroup{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttonGroup button{
+    font-size: 12px;
+    padding: .2rem 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.entry{
+    background-color: #FFDE59;
+    color: #1e1e1e;
+}
+
+.manually{
+    border: 1px solid #D4D5D8;
+    color: #003883;
+}
+
+
+@media (min-width: 1024px) {
+
+    .top{
+        flex-direction: row;
+        margin-bottom: 0rem;
+        padding-top: .5rem;
+    }
+
+    .visits{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
