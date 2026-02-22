@@ -3,14 +3,18 @@
 import { useState, useRef } from 'react'
 import Image from 'next/image'
 import styles from './dashboard.module.css'
-import Visitor from './visitor'
 import VisitorFeed from './visitorFeed'
-import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
-import { FaCaretRight } from 'react-icons/fa6'
+import { FaCaretRight, FaChevronRight } from 'react-icons/fa6'
+import LogEntry from './logEntry'
+import LogExit from './logExit'
+import RecentLogs from './recentLogs'
+import ReportIncident from './reportIncident'
+import Watchlist from './watchlist'
+import VerifyEntry from './verifyEntry'
 
 export default function Dashboard() {
 
-    const [active, setActive] = useState<string>('visitor1')
+    const [active, setActive] = useState<string>('item1')
     const [isOpen, setIsOpen] = useState(false)
 
     const startX = useRef<number | null>(null)
@@ -55,6 +59,8 @@ export default function Dashboard() {
         { id: 'item6', label: 'Watchlist Alert', image: '/alert.svg' }
     ]
 
+    console.log(active)
+
     return (
         <div className={styles.container}
              onTouchStart={handleTouchStart}
@@ -75,8 +81,8 @@ export default function Dashboard() {
                     />
                 )}
                 {!isOpen && (
-                    <div className={styles.dragArrow}>
-                        <span><FaCaretRight/></span>
+                    <div className={styles.dragArrow} onClick={()=>{setIsOpen(true)}}>
+                        <span><FaChevronRight/></span>
                     </div>
                 )}
                 <div className={`${styles.left} ${isOpen ? styles.open : ''}`}>
@@ -143,7 +149,13 @@ export default function Dashboard() {
                 </div>
 
                 <div className={styles.right}>
-                    <VisitorFeed/>
+                    {active === 'item1' && <VisitorFeed setActive={setActive} />}
+                    {active === 'item2' && <LogEntry/>}
+                    {active === 'item3' && <LogExit/>}
+                    {active === 'item4' && <RecentLogs/>}
+                    {active === 'item5' && <ReportIncident/>}
+                    {active === 'item6' && <Watchlist/>}
+                    {active === 'item8' && <VerifyEntry/>}
                 </div>
 
             </div>

@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.title{
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 20px;  
+    margin: 1rem 0rem;
+}
+
+.container hr{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.watchlistItems{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.page{
+    border: 1px solid #D4D5D8;
+    padding: .8rem;
+    border-radius: .5rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 12px;
+}
+
+.page:hover{
+    transform: scale(1.2);
+}
+
+
+@media (min-width: 768px) {
+    .watchlistItems{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .watchlistItems{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

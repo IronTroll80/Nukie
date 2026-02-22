@@ -1,4 +1,3 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -24,8 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" href="/logo.png" />
+        <meta name="theme-color" content="#003883" />
+        <link rel="icon" href="/appLogo.jpg" />
       </head>
       <body className={inter.className}>
         <RegisterSW />

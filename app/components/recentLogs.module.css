@@ -10,7 +10,7 @@
 .title{
     align-self: flex-start;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 20px;  
 }
 
 .subtitle{
@@ -69,6 +69,39 @@
     color: #003883;
 }
 
+.statuses{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.regularButton {
+    cursor: pointer;
+    margin-right: 1rem;
+    color: #555;
+    transition: color 0.2s, font-weight 0.2s;
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    font-size: 14px;
+    background-color: #f1f1f2;
+}
+
+
+
+.activeStatus {
+    cursor: pointer;
+    margin-right: 1rem;
+    color: #555;
+    transition: color 0.2s, font-weight 0.2s;
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: #003883;
+}
 
 @media (min-width: 1024px) {
 
@@ -77,6 +110,11 @@
         margin-bottom: 0rem;
         padding: 0rem;
         padding-top: .5rem;
+    }
+
+    .statuses{ 
+        align-items: center;
+        justify-content: center;
     }
 
     .visits{

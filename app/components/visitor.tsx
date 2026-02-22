@@ -4,7 +4,7 @@ import { useState } from 'react'
 import styles from './visitor.module.css'
 import { FaX } from 'react-icons/fa6'
 
-export default function (){
+export default function Visitor(){
 
     const [status, setStatus] = useState('checked')
     const [showDetails, setShowDetails] = useState(false)
