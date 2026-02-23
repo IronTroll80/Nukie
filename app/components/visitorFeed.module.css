@@ -4,7 +4,7 @@
     margin-bottom: -.5rem;
     flex-direction: column;
     border-radius: 1rem;
-    padding: 1rem;
+    margin-top: 1rem;
 }
 
 .title{
@@ -70,7 +70,8 @@
 }
 
 
-@media (min-width: 1024px) {
+
+@media (min-width: 768px) {
 
     .top{
         flex-direction: row;

@@ -11,6 +11,7 @@ import RecentLogs from './recentLogs'
 import ReportIncident from './reportIncident'
 import Watchlist from './watchlist'
 import VerifyEntry from './verifyEntry'
+import Header from './header'
 
 export default function Dashboard() {
 
@@ -80,15 +81,15 @@ export default function Dashboard() {
                         onClick={() => setIsOpen(false)}
                     />
                 )}
-                {!isOpen && (
+                {/* {!isOpen && (
                     <div className={styles.dragArrow} onClick={()=>{setIsOpen(true)}}>
                         <span><FaChevronRight/></span>
                     </div>
-                )}
+                )} */}
                 <div className={`${styles.left} ${isOpen ? styles.open : ''}`}>
 
                     <div className={styles.imageContainer}>
-                        <Image src={'/logo.png'} alt='Logo' fill />
+                        <Image src={'/logo.jpg'} alt='Logo' fill />
                     </div>
 
                     <div className={styles.navGroup}>
@@ -149,6 +150,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className={styles.right}>
+                    <Header setIsOpen={setIsOpen}/>
                     {active === 'item1' && <VisitorFeed setActive={setActive} />}
                     {active === 'item2' && <LogEntry/>}
                     {active === 'item3' && <LogExit/>}

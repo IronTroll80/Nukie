@@ -6,7 +6,7 @@ export default function Login (){
     return (
         <div className={styles.container}>
             <div className= {styles.left}>
-                <Image src="/logo.png" alt="Logo" width={150} height={150} className={styles.logo} />
+                <Image src="/logo.jpg" alt="Logo" width={150} height={150} className={styles.logo} />
                 <div className= {styles.gateInfo}>
                     <p className={styles.gateTitle}>Gate 1</p>
                     <p className={styles.time}>16: 00</p>

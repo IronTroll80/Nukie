@@ -45,7 +45,7 @@
 .imageContainer {
     position: relative;
     width: 70%;
-    aspect-ratio: 18.3/6.4;
+    aspect-ratio: 2/.5;
     margin-bottom: auto;
 }
 
@@ -170,8 +170,8 @@
     }
 
     .content {
-        max-width: 1200px;
-        width: 90%;
+        max-width: 1600px;
+        width: 95%;
         flex-direction: row;
         min-height: 85vh;
         background-color: #f1f1f2;
@@ -195,9 +195,10 @@
     }
 
     .right {
-        width: 75%;
+        flex: 1;
         background-color: #fff;
-        margin: .5rem;
+        margin: .5rem .5rem .5rem 0rem;
+        border-radius: .25rem;
     }
 
     .time {

@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container p{
+    font-size: 1.3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:#003883;
+    padding: .5rem 0;
+}
+
+.divider{
+    width: 100%;
+    background-color: #003883;
+    height: 1.5px;
+    margin: .5rem 0;
+}
+
+@media (min-width: 1024px) {
+    .header{
+        display: none;
+    }
+}

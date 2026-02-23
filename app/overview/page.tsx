@@ -25,7 +25,7 @@ export default function Sidebar (){
     return (
         <div className={styles.container}>
             <div className= {styles.left}>
-                <Image src="/logo.png" alt="Logo" width={200} height={200} className={styles.logo} />
+                <Image src="/logo.jpg" alt="Logo" width={200} height={200} className={styles.logo} />
             {navItems.map((item, index) =>
             item.divider ? (
                 <hr key={index} />

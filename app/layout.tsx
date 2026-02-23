@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#003883" />
-        <link rel="icon" href="/appLogo.jpg" />
+        <link rel="icon" href="/applogo.jpg" />
       </head>
       <body className={inter.className}>
         <RegisterSW />
